@@ -1,7 +1,7 @@
 USE [test]
 GO
 
-/****** Object:  Table [dbo].[DataImportJournal]    Script Date: 2/16/2017 7:54:39 PM ******/
+/****** Object:  Table [dbo].[DataImportJournal]    Script Date: 2/16/2017 7:59:15 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -14,7 +14,11 @@ CREATE TABLE [dbo].[DataImportJournal](
 	[ImportStartDate] [datetime] NOT NULL,
 	[ImportEndDate] [datetime] NULL,
 	[RowsInserted] [int] NULL,
-	[RowsWithError] [int] NULL
+	[RowsWithError] [int] NULL,
+ CONSTRAINT [PK_DataImportJournal] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 
 GO
