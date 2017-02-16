@@ -7,8 +7,12 @@ Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "NDM_SSIS", "NDM_SSIS\NDM_SS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{921B0C39-BE75-43A0-9145-FFF77DC19149}"
 	ProjectSection(SolutionItems) = preProject
-		SqlScripts\CreateTable_DataImportJournal.sql = SqlScripts\CreateTable_DataImportJournal.sql
 		Readme.txt = Readme.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlScripts", "SqlScripts", "{0DC839E7-B351-420B-9D78-D86E909028FE}"
+	ProjectSection(SolutionItems) = preProject
+		SqlScripts\CreateTable_DataImportJournal.sql = SqlScripts\CreateTable_DataImportJournal.sql
 	EndProjectSection
 EndProject
 Global
@@ -21,5 +25,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0DC839E7-B351-420B-9D78-D86E909028FE} = {921B0C39-BE75-43A0-9145-FFF77DC19149}
 	EndGlobalSection
 EndGlobal
