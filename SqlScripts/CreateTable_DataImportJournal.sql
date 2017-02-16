@@ -1,4 +1,4 @@
-USE [test]
+USE [# specify database name]
 GO
 
 /****** Object:  Table [dbo].[DataImportJournal]    Script Date: 2/16/2017 7:59:15 PM ******/
