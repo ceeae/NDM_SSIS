@@ -23,7 +23,7 @@ Logging
 -------
 
 Packages are configured to use as log provider "SQL Server". 
-Please define logging levels by selecting "SIS->Logging" menu option.
+Please define logging levels by selecting "SSIS -> Logging..." menu option.
 Information is logged on database table under "Tables -> SystemTables -> dbo.sysssislog".
 Current logging level is: OnError, OnTaskFailed, OnWarning.
 
