@@ -2,7 +2,7 @@
 	(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'ProvvIncassi')
 	
 BEGIN
-CREATE TABLE [NCA](
+CREATE TABLE [ProvvIncassi](
     [TipoRecord] numeric(1,0),
     [Contabilita] varchar(4),
     [CodiceSede] varchar(2),
