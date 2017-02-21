@@ -1,26 +1,20 @@
-USE [# specify database name]
-GO
+USE test
 
-/****** Object:  Table [dbo].[DataImportJournal]    Script Date: 2/16/2017 7:59:15 PM ******/
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
-GO
-
-CREATE TABLE [dbo].[DataImportJournal](
+IF NOT EXISTS 
+	(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Journal')
+	
+BEGIN
+CREATE TABLE [Journal](
 	[id] [int] IDENTITY(1,1) NOT NULL,
 	[Filename] [varchar](500) NOT NULL,
 	[ImportStartDate] [datetime] NOT NULL,
 	[ImportEndDate] [datetime] NULL,
 	[RowsInserted] [int] NULL,
 	[RowsWithError] [int] NULL,
- CONSTRAINT [PK_DataImportJournal] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_Journal] PRIMARY KEY CLUSTERED 
 (
 	[id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 
-GO
-
-
+END

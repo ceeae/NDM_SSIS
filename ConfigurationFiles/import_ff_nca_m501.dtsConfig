@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="DESKTOP-9PO21MC\pietro" GeneratedFromPackageName="import_ff_nca_m501" GeneratedFromPackageID="{B54ABA12-7FE5-48CD-BCB9-AE90F15CF558}" GeneratedDate="2/20/2017 10:34:03 PM"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::sFolderPathImport].Properties[Value]" ValueType="String">
+    <ConfiguredValue>c:\vs15\NDM_SSIS\_Import\</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>
