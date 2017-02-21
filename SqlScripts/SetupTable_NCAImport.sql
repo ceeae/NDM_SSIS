@@ -1,12 +1,12 @@
-﻿DECLARE @TableNameNCAImport VARCHAR(20)
-SET @TableNameNCAImport = 'ProvvIncassi'; -- DO NOT CHANGE! Table Name change requires alignment with project variable
+﻿DECLARE @TableName VARCHAR(20)
+SET @TableName = 'ProvvIncassi'; -- DO NOT CHANGE! Table Name change requires alignment with project variable
 
 DECLARE @CreateTableSQLQuery VARCHAR
 IF NOT EXISTS 
-	(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = @TableNameNCAImport)
+	(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = @TableName)
 	
 	BEGIN
-		SET @CreateTableSQLQuery = 'CREATE TABLE ' + @TableNameNCAImport + ' (
+		SET @CreateTableSQLQuery = 'CREATE TABLE ' + @TableName + ' (
 				[TipoRecord] numeric(1,0),
 				[Contabilita] varchar(4),
 				[CodiceSede] varchar(2),
@@ -77,6 +77,6 @@ IF NOT EXISTS
 			)';
 	END
 ELSE
-	SET @CreateTableSQLQuery = 'TRUNCATE TABLE ' + @TableNameNCAImport;
+	SET @CreateTableSQLQuery = 'TRUNCATE TABLE ' + @TableName;
 
 EXEC (@CreateTableSQLQuery);

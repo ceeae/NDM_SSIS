@@ -1,12 +1,12 @@
-DECLARE @TableNameJournal VARCHAR(20)
-SET @TableNameJournal = 'Journal'
+DECLARE @TableName VARCHAR(20)
+SET @TableName = 'Journal'
 
 DECLARE @CreateTableSQLQuery VARCHAR
 IF NOT EXISTS 
-	(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = @TableNameJournal)
+	(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = @TableName)
 	
 	BEGIN
-		SET @CreateTableSQLQuery = 'CREATE TABLE ' + @TableNameJournal + ' (
+		SET @CreateTableSQLQuery = 'CREATE TABLE ' + @TableName + ' (
 			[id] [int] IDENTITY(1,1) NOT NULL,
 			[Filename] [varchar](500) NOT NULL,
 			[ImportStartDate] [datetime] NOT NULL,
