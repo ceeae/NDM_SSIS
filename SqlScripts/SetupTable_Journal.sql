@@ -1,7 +1,7 @@
 DECLARE @TableNameJournal VARCHAR(20)
 SET @TableNameJournal = 'Journal'
 
-DECLARE @CreateTableSQLQuery VARCHAR(5000)
+DECLARE @CreateTableSQLQuery VARCHAR
 IF NOT EXISTS 
 	(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = @TableNameJournal)
 	

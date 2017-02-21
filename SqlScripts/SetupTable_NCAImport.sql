@@ -1,7 +1,7 @@
 ﻿DECLARE @TableNameNCAImport VARCHAR(20)
 SET @TableNameNCAImport = 'ProvvIncassi'; -- DO NOT CHANGE! Table Name change requires alignment with project variable
 
-DECLARE @CreateTableSQLQuery VARCHAR(5000)
+DECLARE @CreateTableSQLQuery VARCHAR
 IF NOT EXISTS 
 	(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = @TableNameNCAImport)
 	
