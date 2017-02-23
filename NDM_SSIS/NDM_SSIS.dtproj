@@ -18,6 +18,11 @@
           <FullPath>import_ff_nca_m501.dtsx</FullPath>
           <References />
         </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>splitter.dtsx</Name>
+          <FullPath>splitter.dtsx</FullPath>
+          <References />
+        </DtsPackage>
       </DTSPackages>
     </Manifest>
   </DeploymentModelSpecificContent>
@@ -33,13 +38,7 @@
         <ConnectionSecurityMappings />
         <DatabaseStorageLocations />
         <TargetServerVersion>SQLServer2016</TargetServerVersion>
-        <ParameterConfigurationValues>
-          <ConfigurationSetting>
-            <Id>LastModifiedTime</Id>
-            <Name>LastModifiedTime</Name>
-            <Value xsi:type="xsd:dateTime">2017-02-15T14:50:19.2687648Z</Value>
-          </ConfigurationSetting>
-        </ParameterConfigurationValues>
+        <ParameterConfigurationValues />
       </Options>
     </Configuration>
   </Configurations>
