@@ -77,6 +77,6 @@ IF NOT EXISTS
 			)';
 	END
 ELSE
---	SET @CreateTableSQLQuery = 'TRUNCATE TABLE ' + @TableName;
+--	Ops! SET @CreateTableSQLQuery = 'TRUNCATE TABLE ' + @TableName;
 
 EXEC (@CreateTableSQLQuery);
